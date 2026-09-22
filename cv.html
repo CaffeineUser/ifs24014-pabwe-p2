@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Digital | John Doe</title>
+
+    <!-- Tailwind CSS 4 (Play CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Tabler Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <style type="text/tailwindcss">
+        @theme {
+      --color-brand-50: #eff6ff;
+      --color-brand-100: #dbeafe;
+      --color-brand-500: #3b82f6;
+      --color-brand-600: #2563eb;
+      --color-brand-700: #1d4ed8;
+      
+      --color-dark-800: #1e293b;
+      --color-dark-900: #0f172a;
+    }
+
+    body {
+      background-color: #f1f5f9;
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+  </style>
+</head>
+
+<body class="antialiased text-slate-800 min-h-screen py-6 px-4 sm:px-6 md:py-12 flex justify-center items-start">
+
+    <!-- Main Container: 1 Col on Mobile, 2 Cols on Desktop -->
+    <div class="w-full max-w-5xl bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+
+        <!-- LEFT COLUMN (Sidebar Profil) -->
+        <aside class="w-full md:w-[35%] bg-dark-900 text-white p-8 md:p-10 flex flex-col gap-10">
+
+            <!-- Profil Info -->
+            <div class="flex flex-col items-center text-center">
+                <!-- Avatar / Foto -->
+                <div class="relative w-32 h-32 mb-5 group">
+                    <div
+                        class="absolute inset-0 bg-brand-500 rounded-full blur-md opacity-40 group-hover:opacity-70 transition duration-300">
+                    </div>
+                    <img src="https://ui-avatars.com/api/?name=John+Doe&size=256&background=3b82f6&color=fff&rounded=true"
+                        alt="Foto Profil"
+                        class="relative w-full h-full rounded-full border-4 border-slate-800 object-cover shadow-lg">
+                </div>
+
+                <h1 class="text-3xl font-bold tracking-tight mb-1">John Doe</h1>
+                <p class="text-brand-400 font-medium tracking-wide">Aspiring AI Engineer</p>
+            </div>
+
+            <!-- Kontak -->
+            <div class="flex flex-col gap-4 text-sm text-slate-300">
+                <a href="mailto:johndoe@email.com"
+                    class="flex items-center gap-3 hover:text-white hover:translate-x-1 transition-all duration-300">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-brand-400"><i
+                            class="ti ti-mail text-lg"></i></div>
+                    <span>johndoe@email.com</span>
+                </a>
+                <a href="tel:+6281234567890"
+                    class="flex items-center gap-3 hover:text-white hover:translate-x-1 transition-all duration-300">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-brand-400"><i
+                            class="ti ti-phone text-lg"></i></div>
+                    <span>+62 812-3456-7890</span>
+                </a>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-brand-400"><i
+                            class="ti ti-map-pin text-lg"></i></div>
+                    <span>Jakarta, Indonesia</span>
+                </div>
+                <a href="https://linkedin.com/in/johndoe" target="_blank"
+                    class="flex items-center gap-3 hover:text-white hover:translate-x-1 transition-all duration-300">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-brand-400"><i
+                            class="ti ti-brand-linkedin text-lg"></i></div>
+                    <span>linkedin.com/in/johndoe</span>
+                </a>
+                <a href="https://github.com/johndoe" target="_blank"
+                    class="flex items-center gap-3 hover:text-white hover:translate-x-1 transition-all duration-300">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-brand-400"><i
+                            class="ti ti-brand-github text-lg"></i></div>
+                    <span>github.com/johndoe</span>
+                </a>
+            </div>
+
+            <!-- Pendidikan -->
+            <div>
+                <h2
+                    class="text-sm font-bold tracking-widest text-slate-400 uppercase mb-5 pb-2 border-b border-slate-700 flex items-center gap-2">
+                    <i class="ti ti-school"></i> Pendidikan
+                </h2>
+                <div class="flex flex-col gap-5">
+                    <div
+                        class="relative pl-4 before:absolute before:left-0 before:top-1.5 before:w-1.5 before:h-1.5 before:bg-brand-500 before:rounded-full">
+                        <h3 class="font-bold text-white leading-tight">Universitas Teknologi AI</h3>
+                        <p class="text-brand-400 text-sm mt-1">S1 Teknik Informatika</p>
+                        <p class="text-slate-500 text-xs mt-1">2024 - Sekarang</p>
+                    </div>
+                    <div
+                        class="relative pl-4 before:absolute before:left-0 before:top-1.5 before:w-1.5 before:h-1.5 before:bg-slate-500 before:rounded-full">
+                        <h3 class="font-bold text-white leading-tight">SMA Negeri 1 Jakarta</h3>
+                        <p class="text-brand-400 text-sm mt-1">Jurusan IPA</p>
+                        <p class="text-slate-500 text-xs mt-1">2021 - 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Keahlian -->
+            <div>
+                <h2
+                    class="text-sm font-bold tracking-widest text-slate-400 uppercase mb-5 pb-2 border-b border-slate-700 flex items-center gap-2">
+                    <i class="ti ti-bolt"></i> Keahlian
+                </h2>
+                <div class="flex flex-wrap gap-2">
+                    <span
+                        class="px-3 py-1.5 bg-slate-800 hover:bg-brand-600 transition duration-300 text-xs rounded-full border border-slate-700 text-slate-200">HTML5</span>
+                    <span
+                        class="px-3 py-1.5 bg-slate-800 hover:bg-brand-600 transition duration-300 text-xs rounded-full border border-slate-700 text-slate-200">CSS3</span>
+                    <span
+                        class="px-3 py-1.5 bg-slate-800 hover:bg-brand-600 transition duration-300 text-xs rounded-full border border-slate-700 text-slate-200">Tailwind
+                        CSS 4</span>
+                    <span
+                        class="px-3 py-1.5 bg-slate-800 hover:bg-brand-600 transition duration-300 text-xs rounded-full border border-slate-700 text-slate-200">JavaScript</span>
+                    <span
+                        class="px-3 py-1.5 bg-slate-800 hover:bg-brand-600 transition duration-300 text-xs rounded-full border border-slate-700 text-slate-200">Python</span>
+                    <span
+                        class="px-3 py-1.5 bg-slate-800 hover:bg-brand-600 transition duration-300 text-xs rounded-full border border-slate-700 text-slate-200">Machine
+                        Learning</span>
+                    <span
+                        class="px-3 py-1.5 bg-slate-800 hover:bg-brand-600 transition duration-300 text-xs rounded-full border border-slate-700 text-slate-200">Git
+                        & GitHub</span>
+                    <span
+                        class="px-3 py-1.5 bg-slate-800 hover:bg-brand-600 transition duration-300 text-xs rounded-full border border-slate-700 text-slate-200">Prompt
+                        Engineering</span>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- RIGHT COLUMN (Konten Utama) -->
+        <main class="w-full md:w-[65%] p-8 md:p-12 lg:p-14 flex flex-col gap-12 bg-white">
+
+            <!-- Navigasi Internal -->
+            <nav class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
+                <a href="index.html" class="text-xl font-extrabold tracking-tight text-slate-800">
+                    Nexora<span class="text-brand-600">AI</span>
+                </a>
+                <div class="flex gap-4 text-sm font-medium">
+                    <a href="index.html" class="flex items-center gap-1.5 text-slate-500 hover:text-brand-600 transition">
+                        <i class="ti ti-home"></i> Home
+                    </a>
+                    <a href="blog.html" class="flex items-center gap-1.5 text-slate-500 hover:text-brand-600 transition">
+                        <i class="ti ti-article"></i> Blog
+                    </a>
+                    <a href="cv.html" class="flex items-center gap-1.5 text-brand-600 border-b-2 border-brand-600 pb-1">
+                        <i class="ti ti-user"></i> CV
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Tentang Saya -->
+            <section>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600">
+                        <i class="ti ti-user-scan text-2xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-extrabold text-slate-800 tracking-tight">Tentang Saya</h2>
+                </div>
+                <p class="text-slate-600 leading-relaxed text-justify">
+                    Saya adalah mahasiswa Teknik Informatika yang memiliki ketertarikan mendalam di bidang
+                    <strong>Artificial Intelligence</strong> dan <strong>Web Development</strong>. Memiliki pengalaman
+                    dasar dalam mengembangkan model machine learning sederhana dan membangun antarmuka web interaktif
+                    yang modern. Saat ini saya aktif mengeksplorasi potensi <em>Large Language Models (LLM)</em> untuk
+                    diimplementasikan ke dalam aplikasi web guna memberikan solusi yang inovatif dan efisien.
+                </p>
+            </section>
+
+            <!-- Pengalaman -->
+            <section>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600">
+                        <i class="ti ti-briefcase text-2xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-extrabold text-slate-800 tracking-tight">Pengalaman</h2>
+                </div>
+
+                <div class="flex flex-col gap-8">
+                    <!-- Item 1 -->
+                    <div
+                        class="relative pl-6 before:absolute before:left-0 before:top-2 before:w-3 before:h-3 before:bg-brand-500 before:rounded-full before:ring-4 before:ring-brand-100">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                            <h3 class="text-lg font-bold text-slate-800 leading-none">Anggota Divisi R&D AI</h3>
+                            <span
+                                class="text-xs font-semibold text-brand-600 bg-brand-50 px-3 py-1.5 rounded-full w-max">Sep
+                                2024 - Sekarang</span>
+                        </div>
+                        <h4 class="text-slate-500 font-medium text-sm mb-3">Himpunan Mahasiswa Informatika (HMIF)</h4>
+                        <ul class="list-disc list-outside ml-4 text-slate-600 space-y-1.5 text-sm">
+                            <li>Mengeksplorasi pemanfaatan <em>Generative AI</em> untuk mendukung aktivitas riset dan
+                                akademik mahasiswa.</li>
+                            <li>Menyelenggarakan workshop dasar-dasar <em>Prompt Engineering</em> untuk 50+ peserta
+                                mahasiswa baru.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div
+                        class="relative pl-6 before:absolute before:left-0 before:top-2 before:w-3 before:h-3 before:bg-slate-300 before:rounded-full before:ring-4 before:ring-slate-100">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                            <h3 class="text-lg font-bold text-slate-800 leading-none">Web Developer Intern</h3>
+                            <span
+                                class="text-xs font-semibold text-slate-600 bg-slate-100 px-3 py-1.5 rounded-full w-max">Jun
+                                2024 - Agu 2024</span>
+                        </div>
+                        <h4 class="text-slate-500 font-medium text-sm mb-3">PT Teknologi Masa Depan</h4>
+                        <ul class="list-disc list-outside ml-4 text-slate-600 space-y-1.5 text-sm">
+                            <li>Membantu merancang dan mengembangkan halaman <em>landing page</em> responsif menggunakan
+                                HTML, CSS, dan Tailwind CSS.</li>
+                            <li>Berkolaborasi dengan tim desain UI/UX untuk memastikan implementasi tata letak yang
+                                <em>pixel-perfect</em>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Proyek & Portfolio -->
+            <section>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600">
+                        <i class="ti ti-code text-2xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-extrabold text-slate-800 tracking-tight">Proyek & Portfolio</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <!-- Project 1 -->
+                    <div
+                        class="group flex flex-col justify-between border border-slate-200 rounded-2xl p-6 hover:border-brand-300 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 bg-white">
+                        <div>
+                            <div
+                                class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 mb-4 group-hover:bg-brand-50 group-hover:text-brand-600 transition">
+                                <i class="ti ti-news text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-brand-600 transition">
+                                Nexora AI Blog</h3>
+                            <p class="text-sm text-slate-500 mb-4 line-clamp-3">
+                                Platform blog informatif tentang Generative AI, tren LLM, dan tips Prompt Engineering
+                                dengan desain tata letak yang estetik dan minimalis.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-1 rounded">HTML</span>
+                                <span
+                                    class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-1 rounded">Bootstrap
+                                    5</span>
+                            </div>
+                        </div>
+                        <a href="blog.html"
+                            class="inline-flex items-center w-max text-sm font-bold text-brand-600 hover:text-brand-800 transition">
+                            Lihat Blog <i
+                                class="ti ti-arrow-right ml-1 group-hover:translate-x-1.5 transition-transform"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div
+                        class="group flex flex-col justify-between border border-slate-200 rounded-2xl p-6 hover:border-brand-300 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 bg-white">
+                        <div>
+                            <div
+                                class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 mb-4 group-hover:bg-brand-50 group-hover:text-brand-600 transition">
+                                <i class="ti ti-rocket text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-brand-600 transition">
+                                Nexora Landing Page</h3>
+                            <p class="text-sm text-slate-500 mb-4 line-clamp-3">
+                                Halaman utama <em>(Landing Page)</em> untuk perusahaan rintisan Nexora AI, dirancang
+                                untuk memperkenalkan solusi teknologi kecerdasan buatan ke publik.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-1 rounded">HTML</span>
+                                <span
+                                    class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-1 rounded">CSS
+                                    Custom</span>
+                            </div>
+                        </div>
+                        <a href="index.html"
+                            class="inline-flex items-center w-max text-sm font-bold text-brand-600 hover:text-brand-800 transition">
+                            Lihat Proyek <i
+                                class="ti ti-arrow-right ml-1 group-hover:translate-x-1.5 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sertifikat / Penghargaan -->
+            <section>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600">
+                        <i class="ti ti-medal text-2xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-extrabold text-slate-800 tracking-tight">Sertifikat</h2>
+                </div>
+                <div class="flex flex-col gap-4">
+
+                    <div
+                        class="flex items-center gap-4 p-4 border border-slate-100 rounded-2xl hover:bg-slate-50 transition cursor-default">
+                        <div
+                            class="w-12 h-12 rounded-full bg-yellow-100 text-yellow-600 flex items-center justify-center flex-shrink-0">
+                            <i class="ti ti-certificate text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">Machine Learning Basics</h3>
+                            <p class="text-sm text-slate-500">Dicoding Indonesia &bull; 2024</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex items-center gap-4 p-4 border border-slate-100 rounded-2xl hover:bg-slate-50 transition cursor-default">
+                        <div
+                            class="w-12 h-12 rounded-full bg-yellow-100 text-yellow-600 flex items-center justify-center flex-shrink-0">
+                            <i class="ti ti-certificate text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">Belajar Dasar Pemrograman Web</h3>
+                            <p class="text-sm text-slate-500">Dicoding Indonesia &bull; 2023</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+</body>
+
+</html>
