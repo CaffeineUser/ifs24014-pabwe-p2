@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV Digital John Doe - Aspiring AI Engineer">
     <title>CV Digital | John Doe</title>
 
     <!-- Tailwind CSS 4 (Play CDN) -->
@@ -33,11 +34,12 @@
 
 <body class="antialiased text-slate-800 min-h-screen py-6 px-4 sm:px-6 md:py-12 flex justify-center items-start">
 
-    <!-- Main Container: 1 Col on Mobile, 2 Cols on Desktop -->
+    <!-- Main Container -->
     <div class="w-full max-w-5xl bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
 
-        <!-- LEFT COLUMN (Sidebar Profil) -->
-        <aside class="w-full md:w-[35%] bg-dark-900 text-white p-8 md:p-10 flex flex-col gap-10">
+        <!-- LEFT COLUMN (Sidebar Profil - Landmark) -->
+        <aside aria-label="Profil Pengguna"
+            class="w-full md:w-[35%] bg-dark-900 text-white p-8 md:p-10 flex flex-col gap-10">
 
             <!-- Profil Info -->
             <div class="flex flex-col items-center text-center">
@@ -47,7 +49,7 @@
                         class="absolute inset-0 bg-brand-500 rounded-full blur-md opacity-40 group-hover:opacity-70 transition duration-300">
                     </div>
                     <img src="https://ui-avatars.com/api/?name=John+Doe&size=256&background=3b82f6&color=fff&rounded=true"
-                        alt="Foto Profil"
+                        alt="Foto Profil John Doe" width="128" height="128" fetchpriority="high"
                         class="relative w-full h-full rounded-full border-4 border-slate-800 object-cover shadow-lg">
                 </div>
 
@@ -74,13 +76,13 @@
                             class="ti ti-map-pin text-lg"></i></div>
                     <span>Jakarta, Indonesia</span>
                 </div>
-                <a href="https://linkedin.com/in/johndoe" target="_blank"
+                <a href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer"
                     class="flex items-center gap-3 hover:text-white hover:translate-x-1 transition-all duration-300">
                     <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-brand-400"><i
                             class="ti ti-brand-linkedin text-lg"></i></div>
                     <span>linkedin.com/in/johndoe</span>
                 </a>
-                <a href="https://github.com/johndoe" target="_blank"
+                <a href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer"
                     class="flex items-center gap-3 hover:text-white hover:translate-x-1 transition-all duration-300">
                     <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-brand-400"><i
                             class="ti ti-brand-github text-lg"></i></div>
@@ -89,7 +91,7 @@
             </div>
 
             <!-- Pendidikan -->
-            <div>
+            <div aria-label="Riwayat Pendidikan">
                 <h2
                     class="text-sm font-bold tracking-widest text-slate-400 uppercase mb-5 pb-2 border-b border-slate-700 flex items-center gap-2">
                     <i class="ti ti-school"></i> Pendidikan
@@ -111,7 +113,7 @@
             </div>
 
             <!-- Keahlian -->
-            <div>
+            <div aria-label="Daftar Keahlian">
                 <h2
                     class="text-sm font-bold tracking-widest text-slate-400 uppercase mb-5 pb-2 border-b border-slate-700 flex items-center gap-2">
                     <i class="ti ti-bolt"></i> Keahlian
@@ -142,34 +144,39 @@
 
         </aside>
 
-        <!-- RIGHT COLUMN (Konten Utama) -->
+        <!-- RIGHT COLUMN (Konten Utama - Landmark) -->
         <main class="w-full md:w-[65%] p-8 md:p-12 lg:p-14 flex flex-col gap-12 bg-white">
 
-            <!-- Navigasi Internal -->
-            <nav class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
+            <!-- Navigasi Internal - Landmark -->
+            <nav aria-label="Navigasi Internal"
+                class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
                 <a href="index.html" class="text-xl font-extrabold tracking-tight text-slate-800">
                     Nexora<span class="text-brand-600">AI</span>
                 </a>
                 <div class="flex gap-4 text-sm font-medium">
-                    <a href="index.html" class="flex items-center gap-1.5 text-slate-500 hover:text-brand-600 transition">
+                    <a href="index.html"
+                        class="flex items-center gap-1.5 text-slate-500 hover:text-brand-600 transition">
                         <i class="ti ti-home"></i> Home
                     </a>
-                    <a href="blog.html" class="flex items-center gap-1.5 text-slate-500 hover:text-brand-600 transition">
+                    <a href="blog.html"
+                        class="flex items-center gap-1.5 text-slate-500 hover:text-brand-600 transition">
                         <i class="ti ti-article"></i> Blog
                     </a>
-                    <a href="cv.html" class="flex items-center gap-1.5 text-brand-600 border-b-2 border-brand-600 pb-1">
+                    <a href="cv.html" class="flex items-center gap-1.5 text-brand-600 border-b-2 border-brand-600 pb-1"
+                        aria-current="page">
                         <i class="ti ti-user"></i> CV
                     </a>
                 </div>
             </nav>
 
-            <!-- Tentang Saya -->
-            <section>
+            <!-- Tentang Saya - Section Landmark -->
+            <section aria-labelledby="heading-tentang">
                 <div class="flex items-center gap-4 mb-6">
                     <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600">
                         <i class="ti ti-user-scan text-2xl"></i>
                     </div>
-                    <h2 class="text-2xl font-extrabold text-slate-800 tracking-tight">Tentang Saya</h2>
+                    <h2 id="heading-tentang" class="text-2xl font-extrabold text-slate-800 tracking-tight">Tentang Saya
+                    </h2>
                 </div>
                 <p class="text-slate-600 leading-relaxed text-justify">
                     Saya adalah mahasiswa Teknik Informatika yang memiliki ketertarikan mendalam di bidang
@@ -180,17 +187,17 @@
                 </p>
             </section>
 
-            <!-- Pengalaman -->
-            <section>
+            <!-- Pengalaman - Section Landmark -->
+            <section aria-labelledby="heading-pengalaman">
                 <div class="flex items-center gap-4 mb-8">
                     <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600">
                         <i class="ti ti-briefcase text-2xl"></i>
                     </div>
-                    <h2 class="text-2xl font-extrabold text-slate-800 tracking-tight">Pengalaman</h2>
+                    <h2 id="heading-pengalaman" class="text-2xl font-extrabold text-slate-800 tracking-tight">Pengalaman
+                    </h2>
                 </div>
 
                 <div class="flex flex-col gap-8">
-                    <!-- Item 1 -->
                     <div
                         class="relative pl-6 before:absolute before:left-0 before:top-2 before:w-3 before:h-3 before:bg-brand-500 before:rounded-full before:ring-4 before:ring-brand-100">
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
@@ -208,7 +215,6 @@
                         </ul>
                     </div>
 
-                    <!-- Item 2 -->
                     <div
                         class="relative pl-6 before:absolute before:left-0 before:top-2 before:w-3 before:h-3 before:bg-slate-300 before:rounded-full before:ring-4 before:ring-slate-100">
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
@@ -228,17 +234,17 @@
                 </div>
             </section>
 
-            <!-- Proyek & Portfolio -->
-            <section>
+            <!-- Proyek & Portfolio - Section Landmark -->
+            <section aria-labelledby="heading-proyek">
                 <div class="flex items-center gap-4 mb-8">
                     <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600">
                         <i class="ti ti-code text-2xl"></i>
                     </div>
-                    <h2 class="text-2xl font-extrabold text-slate-800 tracking-tight">Proyek & Portfolio</h2>
+                    <h2 id="heading-proyek" class="text-2xl font-extrabold text-slate-800 tracking-tight">Proyek &
+                        Portfolio</h2>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <!-- Project 1 -->
                     <div
                         class="group flex flex-col justify-between border border-slate-200 rounded-2xl p-6 hover:border-brand-300 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 bg-white">
                         <div>
@@ -267,7 +273,6 @@
                         </a>
                     </div>
 
-                    <!-- Project 2 -->
                     <div
                         class="group flex flex-col justify-between border border-slate-200 rounded-2xl p-6 hover:border-brand-300 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 bg-white">
                         <div>
@@ -298,16 +303,16 @@
                 </div>
             </section>
 
-            <!-- Sertifikat / Penghargaan -->
-            <section>
+            <!-- Sertifikat / Penghargaan - Section Landmark -->
+            <section aria-labelledby="heading-sertifikat">
                 <div class="flex items-center gap-4 mb-6">
                     <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600">
                         <i class="ti ti-medal text-2xl"></i>
                     </div>
-                    <h2 class="text-2xl font-extrabold text-slate-800 tracking-tight">Sertifikat</h2>
+                    <h2 id="heading-sertifikat" class="text-2xl font-extrabold text-slate-800 tracking-tight">Sertifikat
+                    </h2>
                 </div>
                 <div class="flex flex-col gap-4">
-
                     <div
                         class="flex items-center gap-4 p-4 border border-slate-100 rounded-2xl hover:bg-slate-50 transition cursor-default">
                         <div
@@ -319,7 +324,6 @@
                             <p class="text-sm text-slate-500">Dicoding Indonesia &bull; 2024</p>
                         </div>
                     </div>
-
                     <div
                         class="flex items-center gap-4 p-4 border border-slate-100 rounded-2xl hover:bg-slate-50 transition cursor-default">
                         <div
@@ -331,7 +335,6 @@
                             <p class="text-sm text-slate-500">Dicoding Indonesia &bull; 2023</p>
                         </div>
                     </div>
-
                 </div>
             </section>
 

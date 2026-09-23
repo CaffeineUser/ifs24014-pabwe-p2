@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog AI - Nexora AI</title>
-  <meta name="description" content="Artikel seputar Generative AI, LLM, Prompt Engineering, RAG, dan etika AI oleh tim Nexora AI.">
+  <meta name="description"
+    content="Artikel seputar Generative AI, LLM, Prompt Engineering, RAG, dan etika AI oleh tim Nexora AI.">
+
+  <!-- Resource Hints (Optimasi Performa Koneksi CDN) -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 
   <!-- Bootstrap 5 CSS (CDN) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -64,9 +70,10 @@
       font-weight: 500;
     }
 
+    /* Peningkatan rasio kontras warna untuk WCAG 1.4.3 Level AA */
     .meta-info {
       font-size: 0.85rem;
-      color: #6b7280;
+      color: #4b5563;
     }
 
     .meta-info i {
@@ -100,25 +107,29 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">Nexora<span>AI</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i>Landing Page</a>
+            <a class="nav-link" href="index.html"><i class="bi bi-house-door me-1" aria-hidden="true"></i>Landing
+              Page</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active fw-semibold" aria-current="page" href="blog.html"><i class="bi bi-journal-text me-1"></i>Blog</a>
+            <a class="nav-link active fw-semibold" aria-current="page" href="blog.html"><i
+                class="bi bi-journal-text me-1" aria-hidden="true"></i>Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cv.html"><i class="bi bi-person-badge me-1"></i>CV</a>
+            <a class="nav-link" href="cv.html"><i class="bi bi-person-badge me-1" aria-hidden="true"></i>CV</a>
           </li>
         </ul>
       </div>
@@ -128,9 +139,11 @@
   <!-- ===== HERO BLOG ===== -->
   <header class="hero-blog text-center">
     <div class="container">
-      <span class="badge bg-light text-dark mb-3"><i class="bi bi-stars me-1"></i>Nexora AI Insights</span>
+      <span class="badge bg-light text-dark mb-3"><i class="bi bi-stars me-1" aria-hidden="true"></i>Nexora AI
+        Insights</span>
       <h1 class="fw-bold">Blog Seputar Artificial Intelligence</h1>
-      <p class="lead mb-0">Wawasan, tren, dan panduan praktis seputar Generative AI, LLM, RAG, dan teknologi AI lainnya.</p>
+      <p class="lead mb-0">Wawasan, tren, dan panduan praktis seputar Generative AI, LLM, RAG, dan teknologi AI lainnya.
+      </p>
     </div>
   </header>
 
@@ -138,82 +151,102 @@
   <main class="container py-5">
     <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
 
-      <!-- Artikel 1 -->
+      <!-- Artikel 1 (Above the Fold: Dimuat Eager untuk CLS & LCP optimal) -->
       <div class="col">
         <article class="card article-card">
-          <img src="https://picsum.photos/seed/generative-ai/600/400" class="card-img-top" alt="Ilustrasi Generative AI menghasilkan gambar digital">
+          <img src="https://picsum.photos/seed/generative-ai/600/400" width="600" height="400" class="card-img-top"
+            alt="Ilustrasi Generative AI menghasilkan gambar digital">
           <div class="card-body d-flex flex-column">
-            <span class="badge badge-category mb-2 align-self-start"><i class="bi bi-magic me-1"></i>Generative AI</span>
+            <span class="badge badge-category mb-2 align-self-start"><i class="bi bi-magic me-1"
+                aria-hidden="true"></i>Generative AI</span>
             <h2 class="h5 card-title">
               <a href="blog-detail.html">Generative AI: Revolusi Kreativitas Digital</a>
             </h2>
-            <p class="card-text flex-grow-1">Bagaimana Generative AI mengubah cara manusia menciptakan teks, gambar, dan audio secara otomatis.</p>
+            <p class="card-text flex-grow-1">Bagaimana Generative AI mengubah cara manusia menciptakan teks, gambar, dan
+              audio secara otomatis.</p>
             <div class="meta-info d-flex flex-wrap gap-3 mt-2">
-              <span><i class="bi bi-person"></i>Tim Nexora</span>
-              <span><i class="bi bi-calendar3"></i>12 Sep 2026</span>
-              <span><i class="bi bi-clock"></i>5 menit</span>
+              <span><i class="bi bi-person" aria-hidden="true"></i>Tim Nexora</span>
+              <span><i class="bi bi-calendar3" aria-hidden="true"></i>12 Sep 2026</span>
+              <span><i class="bi bi-clock" aria-hidden="true"></i>5 menit</span>
             </div>
-            <a href="blog-detail.html" class="btn btn-sm btn-read-more mt-3 align-self-start">Baca selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
+            <a href="blog-detail.html" class="btn btn-sm btn-read-more mt-3 align-self-start"
+              aria-label="Baca selengkapnya tentang Generative AI: Revolusi Kreativitas Digital">Baca selengkapnya <i
+                class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a>
           </div>
         </article>
       </div>
 
-      <!-- Artikel 2 -->
+      <!-- Artikel 2 (Below the Fold: Dimuat Lazy + Async Decoding) -->
       <div class="col">
         <article class="card article-card">
-          <img src="https://picsum.photos/seed/llm-models/600/400" class="card-img-top" alt="Ilustrasi model bahasa besar Large Language Model">
+          <img src="https://picsum.photos/seed/llm-models/600/400" width="600" height="400" loading="lazy"
+            decoding="async" class="card-img-top" alt="Ilustrasi model bahasa besar Large Language Model">
           <div class="card-body d-flex flex-column">
-            <span class="badge badge-category mb-2 align-self-start"><i class="bi bi-chat-square-text me-1"></i>LLM</span>
+            <span class="badge badge-category mb-2 align-self-start"><i class="bi bi-chat-square-text me-1"
+                aria-hidden="true"></i>LLM</span>
             <h2 class="h5 card-title">
               <a href="blog-detail.html">Mengenal Large Language Model (LLM) Lebih Dekat</a>
             </h2>
-            <p class="card-text flex-grow-1">Penjelasan sederhana tentang cara kerja LLM dan mengapa model ini menjadi fondasi AI generatif modern.</p>
+            <p class="card-text flex-grow-1">Penjelasan sederhana tentang cara kerja LLM dan mengapa model ini menjadi
+              fondasi AI generatif modern.</p>
             <div class="meta-info d-flex flex-wrap gap-3 mt-2">
-              <span><i class="bi bi-person"></i>Rani Putri</span>
-              <span><i class="bi bi-calendar3"></i>08 Sep 2026</span>
-              <span><i class="bi bi-clock"></i>7 menit</span>
+              <span><i class="bi bi-person" aria-hidden="true"></i>Rani Putri</span>
+              <span><i class="bi bi-calendar3" aria-hidden="true"></i>08 Sep 2026</span>
+              <span><i class="bi bi-clock" aria-hidden="true"></i>7 menit</span>
             </div>
-            <a href="blog-detail.html" class="btn btn-sm btn-read-more mt-3 align-self-start">Baca selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
+            <a href="blog-detail.html" class="btn btn-sm btn-read-more mt-3 align-self-start"
+              aria-label="Baca selengkapnya tentang Mengenal Large Language Model (LLM) Lebih Dekat">Baca selengkapnya
+              <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a>
           </div>
         </article>
       </div>
 
-      <!-- Artikel 3 -->
+      <!-- Artikel 3 (Below the Fold: Dimuat Lazy + Async Decoding) -->
       <div class="col">
         <article class="card article-card">
-          <img src="https://picsum.photos/seed/prompt-engineering/600/400" class="card-img-top" alt="Ilustrasi konsep prompt engineering pada AI">
+          <img src="https://picsum.photos/seed/prompt-engineering/600/400" width="600" height="400" loading="lazy"
+            decoding="async" class="card-img-top" alt="Ilustrasi konsep prompt engineering pada AI">
           <div class="card-body d-flex flex-column">
-            <span class="badge badge-category mb-2 align-self-start"><i class="bi bi-terminal me-1"></i>Prompt Engineering</span>
+            <span class="badge badge-category mb-2 align-self-start"><i class="bi bi-terminal me-1"
+                aria-hidden="true"></i>Prompt Engineering</span>
             <h2 class="h5 card-title">
               <a href="blog-detail.html">5 Teknik Prompt Engineering untuk Hasil Maksimal</a>
             </h2>
-            <p class="card-text flex-grow-1">Tips praktis menyusun prompt yang efektif agar output AI lebih relevan dan akurat.</p>
+            <p class="card-text flex-grow-1">Tips praktis menyusun prompt yang efektif agar output AI lebih relevan dan
+              akurat.</p>
             <div class="meta-info d-flex flex-wrap gap-3 mt-2">
-              <span><i class="bi bi-person"></i>Dimas Aji</span>
-              <span><i class="bi bi-calendar3"></i>03 Sep 2026</span>
-              <span><i class="bi bi-clock"></i>6 menit</span>
+              <span><i class="bi bi-person" aria-hidden="true"></i>Dimas Aji</span>
+              <span><i class="bi bi-calendar3" aria-hidden="true"></i>03 Sep 2026</span>
+              <span><i class="bi bi-clock" aria-hidden="true"></i>6 menit</span>
             </div>
-            <a href="blog-detail.html" class="btn btn-sm btn-read-more mt-3 align-self-start">Baca selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
+            <a href="blog-detail.html" class="btn btn-sm btn-read-more mt-3 align-self-start"
+              aria-label="Baca selengkapnya tentang 5 Teknik Prompt Engineering untuk Hasil Maksimal">Baca selengkapnya
+              <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a>
           </div>
         </article>
       </div>
 
-      <!-- Artikel 4 -->
+      <!-- Artikel 4 (Below the Fold: Dimuat Lazy + Async Decoding) -->
       <div class="col">
         <article class="card article-card">
-          <img src="https://picsum.photos/seed/rag-architecture/600/400" class="card-img-top" alt="Ilustrasi arsitektur Retrieval-Augmented Generation">
+          <img src="https://picsum.photos/seed/rag-architecture/600/400" width="600" height="400" loading="lazy"
+            decoding="async" class="card-img-top" alt="Ilustrasi arsitektur Retrieval-Augmented Generation">
           <div class="card-body d-flex flex-column">
-            <span class="badge badge-category mb-2 align-self-start"><i class="bi bi-diagram-3 me-1"></i>RAG</span>
+            <span class="badge badge-category mb-2 align-self-start"><i class="bi bi-diagram-3 me-1"
+                aria-hidden="true"></i>RAG</span>
             <h2 class="h5 card-title">
               <a href="blog-detail.html">RAG: Solusi AI yang Lebih Akurat dan Terpercaya</a>
             </h2>
-            <p class="card-text flex-grow-1">Mengapa Retrieval-Augmented Generation menjadi pendekatan populer untuk mengurangi halusinasi AI.</p>
+            <p class="card-text flex-grow-1">Mengapa Retrieval-Augmented Generation menjadi pendekatan populer untuk
+              mengurangi halusinasi AI.</p>
             <div class="meta-info d-flex flex-wrap gap-3 mt-2">
-              <span><i class="bi bi-person"></i>Sari Wulandari</span>
-              <span><i class="bi bi-calendar3"></i>28 Agu 2026</span>
-              <span><i class="bi bi-clock"></i>8 menit</span>
+              <span><i class="bi bi-person" aria-hidden="true"></i>Sari Wulandari</span>
+              <span><i class="bi bi-calendar3" aria-hidden="true"></i>28 Agu 2026</span>
+              <span><i class="bi bi-clock" aria-hidden="true"></i>8 menit</span>
             </div>
-            <a href="blog-detail.html" class="btn btn-sm btn-read-more mt-3 align-self-start">Baca selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
+            <a href="blog-detail.html" class="btn btn-sm btn-read-more mt-3 align-self-start"
+              aria-label="Baca selengkapnya tentang RAG: Solusi AI yang Lebih Akurat dan Terpercaya">Baca selengkapnya
+              <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a>
           </div>
         </article>
       </div>
@@ -227,7 +260,8 @@
       <div class="row g-4">
         <div class="col-md-5">
           <h2 class="h5 fw-bold">Nexora<span style="color: var(--brand-primary);">AI</span></h2>
-          <p class="text-secondary">Blog resmi Nexora AI berisi wawasan terbaru seputar teknologi kecerdasan buatan untuk bisnis dan riset.</p>
+          <p class="text-secondary">Blog resmi Nexora AI berisi wawasan terbaru seputar teknologi kecerdasan buatan
+            untuk bisnis dan riset.</p>
         </div>
         <div class="col-md-3">
           <h2 class="h6 fw-semibold">Navigasi</h2>
@@ -239,8 +273,8 @@
         </div>
         <div class="col-md-4">
           <h2 class="h6 fw-semibold">Kontak</h2>
-          <p class="text-secondary mb-1"><i class="bi bi-envelope me-2"></i>hello@nexoraai.com</p>
-          <p class="text-secondary"><i class="bi bi-geo-alt me-2"></i>Jakarta, Indonesia</p>
+          <p class="text-secondary mb-1"><i class="bi bi-envelope me-2" aria-hidden="true"></i>hello@nexoraai.com</p>
+          <p class="text-secondary"><i class="bi bi-geo-alt me-2" aria-hidden="true"></i>Jakarta, Indonesia</p>
         </div>
       </div>
       <hr class="border-secondary">
@@ -251,4 +285,5 @@
   <!-- Bootstrap JS Bundle (CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
