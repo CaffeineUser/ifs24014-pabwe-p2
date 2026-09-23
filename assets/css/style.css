@@ -39,8 +39,8 @@ button {
 /* ===== 2. CSS VARIABLES (ROOT) ===== */
 :root {
   /* Warna utama */
-  --color-primary: #4f6bff;
-  --color-primary-dark: #3a4fd6;
+  --color-primary: #3b5cda;
+  --color-primary-dark: #2441b8;
   --color-accent: #00d9c0;
   --color-dark: #0b0e17;
   --color-dark-soft: #131826;
@@ -546,7 +546,7 @@ p {
 }
 
 .footer-links a:hover {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 .footer-bottom {
